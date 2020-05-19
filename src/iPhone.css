@@ -1,0 +1,283 @@
+.iPhone-Wrapper {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.iPhone-Screen {
+  display: block;
+  background: linear-gradient(
+    210deg,
+    rgba(255, 255, 255, 1) 10%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  border-radius: 25px;
+  border: 9px solid black;
+  width: 94%;
+  height: 97%;
+  overflow-y: scroll;
+}
+
+.iPhone-Screen.Hidden {
+  background: linear-gradient(
+    210deg,
+    rgba(238, 174, 202, 0.8) 10%,
+    rgba(148, 187, 233, 1) 100%
+  );
+}
+
+.iPhone-Logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  opacity: 1;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.iPhone-Logo img {
+  width: 180px;
+}
+
+.iPhone-Logo.Hidden {
+  opacity: 0;
+  transform: translateX(-50%) translateY(-150%);
+}
+
+.iPhone-Arrow {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%) translateY(-40%);
+  transition: all 1s ease;
+  font-size: 3rem;
+  opacity: 0;
+  cursor: pointer;
+  text-align: center;
+}
+
+.iPhone-Arrow.Hidden {
+  opacity: 0;
+}
+
+.iPhone-Arrow.Blinker {
+  opacity: 0.2;
+  transform: translateX(-50%) translateY(0%);
+}
+
+.iPhone-Content {
+  padding-top: 500px;
+  position: relative;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.iPhone-Battery {
+  position: absolute;
+  font-size: 0.8rem;
+  top: 12px;
+  right: 42px;
+}
+
+.iPhone-Wifi {
+  position: absolute;
+  font-size: 0.6rem;
+  top: 14px;
+  right: 23px;
+}
+
+.iPhone-Time {
+  position: absolute;
+  font-size: 0.8rem;
+  font-weight: 600;
+  top: 13px;
+  left: 24px;
+  color: black;
+}
+
+.iPhone-Time.Hidden {
+  display: none;
+}
+
+.iPhone-Locked-Time {
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.iPhone-Locked-Time p {
+  font-size: 2.5rem;
+}
+
+.iPhone-Locked-Time span {
+  font-size: 0.7rem;
+}
+
+.iPhone-Locked-Time.Hidden {
+  display: none;
+}
+
+.iPhone-Screen::-webkit-scrollbar {
+  width: 5px;
+}
+
+.iPhone-Screen::-webkit-scrollbar-track {
+  background: transparent;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.iPhone-Screen::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50px;
+}
+
+.iPhone-Screen::-webkit-scrollbar-thumb:hover {
+}
+
+.iPhone-Screen::-webkit-scrollbar-track-piece:end {
+  background: transparent;
+  margin-bottom: 100px;
+}
+
+.iPhone-Screen::-webkit-scrollbar-track-piece:start {
+  background: transparent;
+  margin-top: 100px;
+}
+
+.iPhone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  border: 1.5px solid silver;
+  height: 500px;
+  width: 260px;
+  border-radius: 25px;
+  -webkit-box-shadow: -2px -1px 5px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: -2px -1px 5px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: -2px -1px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.iPhone-Overlay {
+  pointer-events: none;
+  z-index: 5;
+  width: 263px;
+  height: 503px;
+  position: absolute;
+  border-radius: 25px;
+  background: linear-gradient(
+    296deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(110, 111, 112, 0) 52%,
+    rgba(250, 253, 255, 0.3) 67%,
+    rgba(250, 253, 255, 1) 100%
+  );
+}
+
+.iPhone-Locked {
+  background-color: black;
+  position: absolute;
+  width: 263px;
+  height: 503px;
+  z-index: 2;
+  border-radius: 25px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.iPhone-Locked.Show {
+  opacity: 1;
+}
+
+.iPhone-Top {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  width: 50%;
+  height: 5%;
+  top: 2px;
+  z-index: 4;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.iPhone-Speaker {
+  background: grey;
+  border-radius: 50px;
+  width: 60%;
+  height: 10%;
+}
+
+.Volume-Wrapper {
+  opacity: 0;
+  border-radius: 50px;
+  background: rgb(128, 124, 124);
+  position: absolute;
+  width: 5px;
+  height: 100px;
+  top: 10%;
+  left: 6%;
+}
+
+.Volume-Wrapper.Show {
+  opacity: 1;
+}
+
+.Volume {
+  position: absolute;
+  background: black;
+  width: 5px;
+  height: 50px;
+  bottom: 0;
+  border-radius: 50px;
+}
+
+.Volume-Counter {
+  position: absolute;
+  left: 10px;
+  top: -10px;
+}
+
+.iPhone-Power-Button {
+  position: absolute;
+  right: 0;
+  background: rgb(173, 173, 173);
+  width: 3px;
+  height: 50px;
+  transform: translateX(2px);
+  top: 17%;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  cursor: pointer;
+}
+
+.iPhone-Volume-Buttons {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 4px;
+  height: 70px;
+  transform: translateX(-4px);
+  top: 15%;
+  cursor: pointer;
+}
+
+.iPhone-Volume-Button {
+  width: 4px;
+  height: 30px;
+  background: silver;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
