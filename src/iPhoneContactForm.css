@@ -1,0 +1,85 @@
+.iPhone-Contact-Form {
+  width: 80%;
+  position: absolute;
+  left: 50%;
+  top: 55%;
+  transform: translateX(-50%);
+}
+
+.iPhone-Contact-Form input,
+.iPhone-Contact-Form textarea {
+  width: 100%;
+  resize: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 5px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+.iPhone-Contact-Form h3 {
+  font-size: 1.6rem !important;
+  width: 100% !important;
+  font-weight: 400 !important;
+  margin-bottom: 10px;
+  background: -webkit-linear-gradient(#4286f4, #373b44);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.iPhone-Contact-Form p {
+  margin-bottom: 30px;
+}
+
+.iPhone-Contact-Form button {
+  cursor: pointer;
+  padding: 8px 0px !important;
+  background-color: #254961;
+  color: white;
+  font-size: 1rem;
+  width: 100% !important;
+}
+
+.Wrap-Input {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.Input {
+  border: none;
+  border-bottom: 2px solid black;
+}
+
+.Input:focus {
+  border-bottom: 2px solid #0056b3;
+}
+
+.Input:focus + .Focus-Input {
+  top: -16px;
+  background: -webkit-linear-gradient(#4286f4, #373b44);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.Input.Has-Value + .Focus-Input {
+  top: -16px;
+  background: -webkit-linear-gradient(#4286f4, #373b44);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.Input.Has-Value {
+  border-bottom: 2px solid #0056b3;
+}
+
+.Focus-Input {
+  position: absolute;
+  pointer-events: none;
+  left: 0;
+  top: 0;
+}

@@ -1,8 +1,7 @@
 .iPhone-Wrapper {
   position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  top: 0%;
+  transform: translate(30%, 6%);
 }
 
 .iPhone-Screen {
@@ -17,14 +16,7 @@
   width: 94%;
   height: 97%;
   overflow-y: scroll;
-}
-
-.iPhone-Screen.Hidden {
-  background: linear-gradient(
-    210deg,
-    rgba(238, 174, 202, 0.8) 10%,
-    rgba(148, 187, 233, 1) 100%
-  );
+  scroll-behavior: smooth;
 }
 
 .iPhone-Logo {
@@ -68,14 +60,12 @@
 .iPhone-Content {
   padding-top: 500px;
   position: relative;
-  display: flex;
   height: 100%;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  color: white;
+  width: 100%;
+  overflow-x: hidden;
+  color: black;
   font-weight: 500;
-  font-size: 1.2rem;
+  font-size: 0.8rem;
 }
 
 .iPhone-Battery {
@@ -253,9 +243,9 @@
   position: absolute;
   right: 0;
   background: rgb(173, 173, 173);
-  width: 3px;
+  width: 5px;
   height: 50px;
-  transform: translateX(2px);
+  transform: translateX(4px);
   top: 17%;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;

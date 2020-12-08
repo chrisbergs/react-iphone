@@ -1,6 +1,7 @@
 import React from "react";
 import "./iPhone.css";
-import Logo from "./images/body-logo.png";
+import Logo from "../images/body-logo.png";
+import ContactForm from "./iPhoneContactForm.js";
 
 const weekdays = [
   "Måndag",
@@ -189,9 +190,7 @@ class iPhone extends React.Component {
                 <img src={Logo} alt="Kite-Logo" />
               </div>
               <div className="iPhone-Content">
-                <p>Konkurrerande priser</p>
-                <p>Nöjd kundgaranti</p>
-                <p>Fri support</p>
+                <ContactForm />
               </div>
               <div className="iPhone-Arrow" onClick={this.autoScroll}>
                 <p style={{ fontSize: "1.2rem" }}>SCROLL</p>
